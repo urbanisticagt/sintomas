@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintomas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="symptom" class="symptom" >
+        <div id="containerSympton" class="containerSymptom">
+            <div class="welcomeMsj"> <!--initialQuestion-->
+                <h1 class="initialMsj textSymptom1"> CONOCE TUS PROBABILIDADES DE POSEER COVID-19</h1>
+                <div class="finalMsj textSymptom3 introAnimation"></div>
+                <img src="image/tel.svg" class="imgFinal introAnimation"><!--respuesta string-->
+                <img src='image/mapa.svg' class="svgMapa">
+                
+                <ul class="centrosBienestarRespiratorio">
+                  <li> <span class="individualCBR">Zona 06</span>
+                    BULEVAR LA PEDRERA, 15 AVENIDA
+                    Y 20 CALLE 19-50, COLONIA PROYECTO 4-4</li>
+
+                    <li> <span class="individualCBR">Zona 07</span>
+                      6ª CALLE “A” 12-51, COLONIA QUINTA SAMAYOA</li>
+
+                    <li> <span class="individualCBR">Zona 12</span>
+                      AVENIDA PETAPA Y 53 CALLE</li>
+
+                    <li> <span class="individualCBR">Zona 18</span>
+                      LOTE 283, MANZANA 14 COLONIA MAYA</li>
+                </ul>
+
+
+                
+                    
+                <input class="buttonSymptom textSymptomButton" id="buttonStartTest" type="button" value="REALIZAR TEST">
+            </div>
+            <div id="questionSeries" class="questionSeries"> <!--questionSeries-->
+
+
+
+
+              <div id='symptonImg' > <!--right-->
+                <img src="" id="imgSymptom" class="imgSymptom introAnimation">
+              </div>
+
+
+              
+
+                <div class="questionLeftSide"> <!--left-->
+                    <div class="topSectionQuestion"> <!--leftTop-->
+                        <div id="questionSection" class="symptomQuestion">
+                            <p class="introAnimation textSymptom2" id="question"></p>
+                            <input type="button" class="buttonSymptom textSymptomButton" id="yesButton" value="Si">
+                            <input type="button" class="buttonSymptom textSymptomButton" id="noButton" value="No">
+                        </div>
+
+                    </div>
+
+                    <div>  <!--leftBottom-->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 100 25">
+                            <rect x=0 y="0" width="100" height="10%" fill="blue" ></rect>
+                            <rect x=0 y="0" width="0" height="10%" fill="red" id="tempLoader"></rect>
+                            <text x="50%" y="50%" text-align="center" class="marcador" fill="white" text-anchor="middle">0%</text>
+                            <!-- <h2 class="marcador">Probabilidad 0%</h2> -->
+                        </svg>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+    
+</body>
+</html>
